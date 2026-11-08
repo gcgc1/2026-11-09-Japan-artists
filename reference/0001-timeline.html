@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Timeline, 1945–2026 · Six Artists · Japan</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <style>
+    .filters { display: flex; flex-wrap: wrap; gap: 6px; margin: 1.4em 0 2em; }
+    .filters button {
+      font-family: var(--sans); font-size: 11px; letter-spacing: .06em; text-transform: uppercase;
+      border: 1px solid var(--rule); background: transparent; color: var(--muted);
+      padding: 6px 10px; cursor: pointer;
+    }
+    .filters button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+    .timeline { list-style: none; margin: 0; padding: 0 0 0 30px; border-left: 1px solid var(--rule); }
+    .entry { position: relative; padding: 0 0 1.8em 22px; }
+    .entry::before {
+      content: ""; position: absolute; left: -35px; top: .55em; width: 9px; height: 9px;
+      border-radius: 50%; background: var(--paper); border: 1.5px solid var(--accent);
+    }
+    .entry[data-kind="context"]::before { border-color: var(--muted); }
+    .entry[data-kind="fashion"]::before { border-color: #6b5b8a; }
+    .entry[data-kind="art"]::before { border-color: var(--accent); }
+    .entry .year { font-family: var(--sans); font-size: .82rem; font-weight: 700; letter-spacing: .08em; color: var(--accent); }
+    .entry .what { font-size: 1.06rem; line-height: 1.42; margin: .1em 0 .2em; }
+    .entry .who { font-family: var(--sans); font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+    .entry .note { font-family: var(--sans); font-size: 12.5px; line-height: 1.5; color: var(--muted); margin-top: .3em; max-width: 38rem; }
+    .entry[hidden] { display: none; }
+    @media print { .filters { display: none; } .timeline { border-left: 1px solid #999; } }
+  </style>
+</head>
+<body style="--accent:#a63a2e">
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../index.html">Six Artists <span>·</span> Japan</a>
+    <nav><a href="0001-timeline.html">Timeline</a><a href="0002-where-to-see-them.html">Where to see</a><a href="0003-glossary.html">Glossary</a><a href="0004-how-to-look.html">How to look</a></nav>
+  </div>
+</header>
+
+<main class="page">
+  <p class="eyebrow">Reference 01 <span class="sep">/</span> print me</p>
+  <h1>One line, six lives</h1>
+  <p class="subtitle">The war, the boom, the bubble, and the moment Japanese fashion took Paris.</p>
+  <p class="lede">Use this to place a work before you read its label. The dates are the spine; the notes are the argument.</p>
+
+  <div class="filters" role="group" aria-label="Filter timeline">
+    <button type="button" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" data-filter="art" aria-pressed="false">Art</button>
+    <button type="button" data-filter="fashion" aria-pressed="false">Fashion</button>
+    <button type="button" data-filter="context" aria-pressed="false">Context</button>
+  </div>
+
+  <ol class="timeline">
+    <li class="entry" data-kind="context">
+      <div class="year">1945</div>
+      <div class="what">The war ends. Hiroshima and Nagasaki are bombed in August.</div>
+      <div class="who">Context · Japan</div>
+      <div class="note">Issey Miyake, aged seven, survives Hiroshima; his mother dies. The occupation begins. Every artist in the first half of this course grows up inside this aftermath.</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">1957–58</div>
+      <div class="what">Kusama flies to Seattle, then New York; the <em>Infinity Nets</em> begin.</div>
+      <div class="who">Yayoi Kusama</div>
+      <div class="note">She had written to Georgia O’Keeffe for advice. In New York she paints thousands of small loops on dark grounds — the first fully mature statement of self-obliteration. <a href="../lessons/0001-kusama.html">Lesson 01 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">1959</div>
+      <div class="what">Kusama’s first New York solo at Brata Gallery. Yoshitomo Nara is born in Hirosaki.</div>
+      <div class="who">Kusama · Nara</div>
+      <div class="note">The two ends of the course overlap: Kusama is already in New York when Nara is born in Aomori, 300 miles north of Tokyo.</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">1962</div>
+      <div class="what">Takashi Murakami is born in Tokyo.</div>
+      <div class="who">Takashi Murakami</div>
+      <div class="note">He grows up in the high-growth years, with anime on television and the Tokyo Olympics on the horizon. <a href="../lessons/0006-murakami.html">Lesson 06 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="context">
+      <div class="year">1964</div>
+      <div class="what">Tokyo Olympics; Miyake graduates from Tama Art University.</div>
+      <div class="who">Context · Miyake</div>
+      <div class="note">The Olympics announce Japan’s post-war reconstruction. Miyake leaves for Paris the following year.</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">1965–66</div>
+      <div class="what">Kusama makes <em>Infinity Mirror Room—Phalli’s Field</em> and stages <em>Narcissus Garden</em> at Venice without an invitation.</div>
+      <div class="who">Yayoi Kusama</div>
+      <div class="note">The room and the mirror balls are the two templates for everything she does later: infinity as an environment, and the artwork as a situation you enter. <a href="../lessons/0001-kusama.html">Lesson 01 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">1969</div>
+      <div class="what">Rei Kawakubo founds Comme des Garçons.</div>
+      <div class="who">Rei Kawakubo</div>
+      <div class="note">The label begins in Tokyo; the Paris debut comes twelve years later. <a href="../lessons/0003-kawakubo.html">Lesson 03 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">1970–73</div>
+      <div class="what">Miyake Design Studio opens; Miyake shows in Paris from 1973.</div>
+      <div class="who">Issey Miyake</div>
+      <div class="note">Miyake is the first of the three fashion designers to be seen in Paris. His subject is not “Japan” but cloth, movement, and daily life. <a href="../lessons/0002-miyake.html">Lesson 02 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">1972</div>
+      <div class="what">Yohji Yamamoto founds Y’s in Tokyo.</div>
+      <div class="who">Yohji Yamamoto</div>
+      <div class="note">The label starts as a women’s business. The oversized black silhouette that becomes famous is still a decade away. <a href="../lessons/0004-yamamoto.html">Lesson 04 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">1973–77</div>
+      <div class="what">Kusama returns to Japan; within four years she enters a Tokyo psychiatric hospital.</div>
+      <div class="who">Yayoi Kusama</div>
+      <div class="note">She lives there for the rest of her life, working in a studio across the street. The “comeback” is not a return to health; it is a working arrangement.</div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">1981</div>
+      <div class="what">Kawakubo and Yamamoto debut in Paris in the same season.</div>
+      <div class="who">Rei Kawakubo · Yohji Yamamoto</div>
+      <div class="note">Oversized, black, asymmetric, apparently unfinished. The French press is scandalised; the “Japanese fashion” category is born. Miyake is already showing in Paris. <a href="../lessons/0003-kawakubo.html">Lesson 03 →</a> <a href="../lessons/0004-yamamoto.html">Lesson 04 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">1988</div>
+      <div class="what">Nara moves to Düsseldorf; Miyake begins his pleating experiments.</div>
+      <div class="who">Yoshitomo Nara · Issey Miyake</div>
+      <div class="note">Nara spends twelve years in Germany, most of it alone; the solitary child becomes his subject. Miyake works out how to pleat a finished garment.</div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">1993</div>
+      <div class="what">Pleats Please launches. Kusama represents Japan at the Venice Biennale.</div>
+      <div class="who">Issey Miyake · Yayoi Kusama</div>
+      <div class="note">Miyake’s pleats become a mass line; Kusama, who staged a guerrilla action at Venice in 1966, is finally inside the official pavilion.</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">1994</div>
+      <div class="what">Kusama’s <em>Pumpkin</em> is installed on Naoshima. Nara moves to Cologne.</div>
+      <div class="who">Yayoi Kusama · Yoshitomo Nara</div>
+      <div class="note">The pumpkin becomes the most photographed public sculpture in Japan. Nara spends six more years in Germany before returning to Japan in 2000. <a href="../lessons/0005-nara.html">Lesson 05 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">1997</div>
+      <div class="what">Kawakubo shows <em>Body Meets Dress, Dress Meets Body</em>.</div>
+      <div class="who">Rei Kawakubo</div>
+      <div class="note">Padded lumps distort the model’s body; gingham makes the whole thing look domestic. The collection is still called “Lumps and Bumps” in the press. <a href="../lessons/0003-kawakubo.html">Lesson 03 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">1998–99</div>
+      <div class="what">Miyake and Dai Fujiwara develop A-POC; the line launches in 1999.</div>
+      <div class="who">Issey Miyake</div>
+      <div class="note">A tube of cloth knitted from a single thread, cut by the wearer. The garment becomes a system rather than a shape. <a href="../lessons/0002-miyake.html">Lesson 02 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2000</div>
+      <div class="what">Murakami publishes the <em>Superflat</em> catalogue; Nara returns to Japan for <em>Don’t Mind, If You Forget Me</em>.</div>
+      <div class="who">Takashi Murakami · Yoshitomo Nara</div>
+      <div class="note">Murakami’s essay turns Edo painting, anime, and otaku culture into a single art-historical argument. Nara’s Yokohama show makes the big-headed children a national image. <a href="../lessons/0005-nara.html">Lesson 05 →</a> <a href="../lessons/0006-murakami.html">Lesson 06 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2001</div>
+      <div class="what">MOCA’s <em>Superflat</em> exhibition; Kaikai Kiki is founded.</div>
+      <div class="who">Takashi Murakami</div>
+      <div class="note">The exhibition runs 14 January – 27 May 2001 and includes Nara, Chiho Aoshima, and others. Murakami’s studio becomes a company.</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2002–03</div>
+      <div class="what">Kusama’s <em>Obliteration Room</em>; Murakami’s Louis Vuitton collaboration.</div>
+      <div class="who">Yayoi Kusama · Takashi Murakami</div>
+      <div class="note">The two poles of the course: a room completed by visitors, and a luxury collaboration that turns an artwork into a global product. <a href="../lessons/0001-kusama.html">Lesson 01 →</a> <a href="../lessons/0006-murakami.html">Lesson 06 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2005</div>
+      <div class="what">Murakami’s <em>Little Boy</em> at Japan Society; Nara’s <em>Aomori-ken (Aomori Dog)</em> is installed.</div>
+      <div class="who">Takashi Murakami · Yoshitomo Nara</div>
+      <div class="note">Murakami turns the “little boy” of the bomb and the otaku into an exhibition title. Nara’s 8.5 m concrete dog becomes a landmark in Aomori.</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2007–08</div>
+      <div class="what">Murakami’s <em>My Lonesome Cowboy</em> sells for $15.2 million; <em>©Murakami</em> opens at the Brooklyn Museum.</div>
+      <div class="who">Takashi Murakami</div>
+      <div class="note">The auction record makes the art-market question unavoidable. The retrospective puts the work in a museum while the merchandise is still on sale downstairs.</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2010</div>
+      <div class="what">Murakami at Versailles; Nara’s <em>Nobody’s Fool</em> at Asia Society.</div>
+      <div class="who">Takashi Murakami · Yoshitomo Nara</div>
+      <div class="note">Murakami’s flowers and characters occupy the palace of the French monarchy. Nara gets his first major New York show, curated by Melissa Chiu and Miwako Tezuka.</div>
+    </li>
+
+    <li class="entry" data-kind="context">
+      <div class="year">2011</div>
+      <div class="what">The Tōhoku earthquake, tsunami, and Fukushima disaster.</div>
+      <div class="who">Context · Japan</div>
+      <div class="note">Nara’s work turns softer and more inward. Murakami responds with <em>The 500 Arhats</em>, a 100-metre painting made with a large team. The disaster is a dividing line in both careers.</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2015</div>
+      <div class="what"><em>The 500 Arhats</em> opens at Mori Art Museum, Tokyo.</div>
+      <div class="who">Takashi Murakami</div>
+      <div class="note">A 3 × 100 m painting, first shown in Doha and then in Tokyo — its first showing in Japan. It is the clearest example of Murakami’s studio-as-factory model. <a href="../lessons/0006-murakami.html">Lesson 06 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">2017</div>
+      <div class="what">The Met’s <em>Rei Kawakubo/Comme des Garçons: Art of the In-Between</em>; the Yayoi Kusama Museum opens in Tokyo.</div>
+      <div class="who">Rei Kawakubo · Yayoi Kusama</div>
+      <div class="note">The Costume Institute devotes a full retrospective to Kawakubo. Kusama gets a five-floor museum in Shinjuku. <a href="../lessons/0003-kawakubo.html">Lesson 03 →</a> <a href="../lessons/0001-kusama.html">Lesson 01 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2019</div>
+      <div class="what">Nara’s <em>Knife Behind Back</em> sells for HK$195.7 million (about $24.9 million).</div>
+      <div class="who">Yoshitomo Nara</div>
+      <div class="note">The highest price for a Japanese artist at auction. The painting is a girl with a knife hidden behind her back — the cute/menacing formula at full scale. <a href="../lessons/0005-nara.html">Lesson 05 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">2022</div>
+      <div class="what">Issey Miyake dies in Tokyo, aged 84.</div>
+      <div class="who">Issey Miyake</div>
+      <div class="note">The house continues under his team; the 2016 National Art Center retrospective remains the fullest account of the work. <a href="../lessons/0002-miyake.html">Lesson 02 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2024</div>
+      <div class="what"><em>Takashi Murakami: Mononoke Kyoto</em> at the Kyoto City Kyocera Museum.</div>
+      <div class="who">Takashi Murakami</div>
+      <div class="note">A large survey that puts the Superflat argument back in the city of traditional painting. Around 170 works.</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2026</div>
+      <div class="what">Kusama dies on 14 August, aged 97. Retrospectives continue in Matsumoto, Tokyo, and Amsterdam.</div>
+      <div class="who">Yayoi Kusama</div>
+      <div class="note">Matsumoto City Museum of Art: <em>Kusama: The place for my soul</em>, 19 September – 6 December 2026. Yayoi Kusama Museum: <em>The Light Spreads Out…</em>, 8 October 2026 – 31 January 2027. <a href="../lessons/0001-kusama.html">Lesson 01 →</a></div>
+    </li>
+  </ol>
+
+  <hr class="rule">
+
+  <section class="source">
+    <h3>Sources</h3>
+    <ul>
+      <li><a href="https://www.theguardian.com/artanddesign/2026/aug/27/yayoi-kusama-obituary">The Guardian, “Yayoi Kusama obituary” (27 Aug 2026)</a></li>
+      <li><a href="https://www.mplus.org.hk/en/magazine/yayoi-kusama-biography-timeline/">M+, “The Life and Career of Yayoi Kusama: A Timeline”</a></li>
+      <li><a href="https://mds.isseymiyake.com/im/en/">Miyake Design Studio, “The Concepts and Work of Issey Miyake”</a></li>
+      <li><a href="https://www.metmuseum.org/essays/miyake-kawakubo-and-yamamoto-japanese-fashion-in-the-twentieth-century">The Met, “Miyake, Kawakubo, and Yamamoto: Japanese Fashion in the Twentieth Century”</a></li>
+      <li><a href="https://www.ngv.vic.gov.au/collecting-comme/rei-kawakubo-reframing-fashion/">NGV, “Rei Kawakubo: reframing fashion”</a></li>
+      <li><a href="https://www.moca.org/exhibitions/superflat">MOCA, <em>Superflat</em> (2001)</a></li>
+      <li><a href="https://www.christies.com/en/stories/yoshitomo-nara-collecting-guide-aa7bd7944a774805b39fa91a3cded9e7">Christie’s, “Everything you need to know about Yoshitomo Nara”</a></li>
+      <li><a href="https://www.mori.art.museum/contents/tm500/mobile/en/exhibition.html">Mori Art Museum, <em>Takashi Murakami: The 500 Arhats</em></a></li>
+    </ul>
+    <p>Dates are a snapshot as of November 2026. Exhibition dates change; verify before travelling.</p>
+  </section>
+
+  <nav class="lesson-nav">
+    <a href="../index.html">← Course home</a>
+    <a class="next" href="0002-where-to-see-them.html">Where to see them →</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="inner"><span>Six Artists · Japan</span><span>Reference 01 · Timeline</span></div>
+</footer>
+
+<script>
+  (function () {
+    var buttons = Array.prototype.slice.call(document.querySelectorAll('.filters button'));
+    var entries = Array.prototype.slice.call(document.querySelectorAll('.entry'));
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        var filter = button.getAttribute('data-filter');
+        buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b === button)); });
+        entries.forEach(function (entry) {
+          entry.hidden = filter !== 'all' && entry.getAttribute('data-kind') !== filter;
+        });
+      });
+    });
+  })();
+</script>
+</body>
+</html>
