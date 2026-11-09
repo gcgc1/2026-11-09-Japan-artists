@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>時間軸，1945–2026 · 六位藝術家 · 日本</title>
+  <link rel="stylesheet" href="../assets/course.css">
+  <style>
+    .filters { display: flex; flex-wrap: wrap; gap: 6px; margin: 1.4em 0 2em; }
+    .filters button {
+      font-family: var(--sans); font-size: 11px; letter-spacing: .06em; text-transform: uppercase;
+      border: 1px solid var(--rule); background: transparent; color: var(--muted);
+      padding: 6px 10px; cursor: pointer;
+    }
+    .filters button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+    .timeline { list-style: none; margin: 0; padding: 0 0 0 30px; border-left: 1px solid var(--rule); }
+    .entry { position: relative; padding: 0 0 1.8em 22px; }
+    .entry::before {
+      content: ""; position: absolute; left: -35px; top: .55em; width: 9px; height: 9px;
+      border-radius: 50%; background: var(--paper); border: 1.5px solid var(--accent);
+    }
+    .entry[data-kind="context"]::before { border-color: var(--muted); }
+    .entry[data-kind="fashion"]::before { border-color: #6b5b8a; }
+    .entry[data-kind="art"]::before { border-color: var(--accent); }
+    .entry .year { font-family: var(--sans); font-size: .82rem; font-weight: 700; letter-spacing: .08em; color: var(--accent); }
+    .entry .what { font-size: 1.06rem; line-height: 1.42; margin: .1em 0 .2em; }
+    .entry .who { font-family: var(--sans); font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+    .entry .note { font-family: var(--sans); font-size: 12.5px; line-height: 1.5; color: var(--muted); margin-top: .3em; max-width: 38rem; }
+    .entry[hidden] { display: none; }
+    @media print { .filters { display: none; } .timeline { border-left: 1px solid #999; } }
+  </style>
+</head>
+<body style="--accent:#a63a2e">
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="../lessons_chi/index.html">六位藝術家 <span>·</span> 日本</a>
+    <nav><a href="0001-timeline.html">時間軸</a><a href="0002-where-to-see-them.html">何處觀賞</a><a href="0003-glossary.html">詞彙表</a><a href="0004-how-to-look.html">如何觀看</a></nav>
+  </div>
+</header>
+
+<main class="page">
+  <p class="eyebrow">參考 01 <span class="sep">/</span> 可列印</p>
+  <h1>一條線，六段人生</h1>
+  <p class="subtitle">戰爭、繁榮、泡沫，以及日本時尚征服巴黎的那一刻。</p>
+  <p class="lede">在你讀展籤之前，先用它把一件作品放回時間軸上。年代是骨架；註記才是論證。</p>
+
+  <div class="filters" role="group" aria-label="篩選時間軸">
+    <button type="button" data-filter="all" aria-pressed="true">全部</button>
+    <button type="button" data-filter="art" aria-pressed="false">藝術</button>
+    <button type="button" data-filter="fashion" aria-pressed="false">時尚</button>
+    <button type="button" data-filter="context" aria-pressed="false">脈絡</button>
+  </div>
+
+  <ol class="timeline">
+    <li class="entry" data-kind="context">
+      <div class="year">1945</div>
+      <div class="what">戰爭結束。廣島與長崎於八月遭到原爆。</div>
+      <div class="who">脈絡 · 日本</div>
+      <div class="note">三宅一生七歲，於廣島原爆中生還；他的母親離世。佔領時期開始。這門課前半段的每一位藝術家，都在這場餘波中長大。</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">1957–58</div>
+      <div class="what">草間彌生飛抵西雅圖，再前往紐約；《無限網》就此開始。</div>
+      <div class="who">草間彌生</div>
+      <div class="note">她曾寫信向喬治亞·歐姬芙請教。在紐約，她在深色底色上畫下數以千計的細小迴圈——這是自我消融第一次完全成熟的表述。<a href="../lessons_chi/0001-kusama.html">第 01 課 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">1959</div>
+      <div class="what">草間彌生在 Brata Gallery 舉辦紐約首場個展。奈良美智在弘前出生。</div>
+      <div class="who">草間彌生 · 奈良美智</div>
+      <div class="note">課程的兩端在此重疊：奈良美智在東京以北 300 英里的青森出生時，草間彌生早已身在紐約。</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">1962</div>
+      <div class="what">村上隆在東京出生。</div>
+      <div class="who">村上隆</div>
+      <div class="note">他在高度成長的年代長大，電視上有動畫，東京奧運已在不遠處。<a href="../lessons_chi/0006-murakami.html">第 06 課 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="context">
+      <div class="year">1964</div>
+      <div class="what">東京奧運；三宅一生自多摩美術大學畢業。</div>
+      <div class="who">脈絡 · 三宅一生</div>
+      <div class="note">奧運向世界宣告日本的戰後重建。三宅一生隔年動身前往巴黎。</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">1965–66</div>
+      <div class="what">草間彌生創作《無限鏡屋——陽具原野》，並在未受邀的情況下於威尼斯演出《自戀庭園》。</div>
+      <div class="who">草間彌生</div>
+      <div class="note">那個房間與那些鏡面圓球，是她日後一切創作的兩個原型：無限作為一種環境，以及作品作為一個你走進去的處境。<a href="../lessons_chi/0001-kusama.html">第 01 課 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">1969</div>
+      <div class="what">川久保玲創立 Comme des Garçons。</div>
+      <div class="who">川久保玲</div>
+      <div class="note">品牌始於東京；巴黎首秀則在十二年後。<a href="../lessons_chi/0003-kawakubo.html">第 03 課 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">1970–73</div>
+      <div class="what">三宅設計事務所成立；三宅一生自 1973 年起在巴黎發表。</div>
+      <div class="who">三宅一生</div>
+      <div class="note">三宅一生是三位時裝設計師中最早在巴黎被看見的一位。他的題材不是「日本」，而是布料、動作與日常生活。<a href="../lessons_chi/0002-miyake.html">第 02 課 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">1972</div>
+      <div class="what">山本耀司在東京創立 Y's。</div>
+      <div class="who">山本耀司</div>
+      <div class="note">這個品牌起初做女裝。那個日後聲名大噪的 oversize 黑色輪廓，還要再過十年才出現。<a href="../lessons_chi/0004-yamamoto.html">第 04 課 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">1973–77</div>
+      <div class="what">草間彌生回到日本；四年之內，她住進東京一所精神科醫院。</div>
+      <div class="who">草間彌生</div>
+      <div class="note">她餘生都住在那裡，在對街的工作室創作。所謂的「復出」並不是健康的回復；它是一種工作的安排。</div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">1981</div>
+      <div class="what">川久保玲與山本耀司在同一個季度於巴黎首次登場。</div>
+      <div class="who">川久保玲 · 山本耀司</div>
+      <div class="note">oversize、黑色、不對稱，看似未完成。法國媒體一片譁然；「日本時尚」這個分類於焉誕生。三宅一生早已在巴黎發表。<a href="../lessons_chi/0003-kawakubo.html">第 03 課 →</a> <a href="../lessons_chi/0004-yamamoto.html">第 04 課 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">1988</div>
+      <div class="what">奈良美智移居杜塞道夫；三宅一生開始他的壓褶實驗。</div>
+      <div class="who">奈良美智 · 三宅一生</div>
+      <div class="note">奈良美智在德國度過十二年，多數時間獨自一人；那個孤獨的孩子成了他的主題。三宅一生則想通了如何為一件已成品的衣服壓褶。</div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">1993</div>
+      <div class="what">Pleats Please 上市。草間彌生代表日本參加威尼斯雙年展。</div>
+      <div class="who">三宅一生 · 草間彌生</div>
+      <div class="note">三宅一生的壓褶成為量產系列；而曾在 1966 年於威尼斯進行游擊式行動的草間彌生，終於進入了官方場館。</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">1994</div>
+      <div class="what">草間彌生的《南瓜》裝置於直島。奈良美智移居科隆。</div>
+      <div class="who">草間彌生 · 奈良美智</div>
+      <div class="note">那顆南瓜成為日本被拍攝次數最多的公共雕塑。奈良美智在德國又待了六年，才於 2000 年回到日本。<a href="../lessons_chi/0005-nara.html">第 05 課 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">1997</div>
+      <div class="what">川久保玲發表《身體遇見衣、衣遇見身體》。</div>
+      <div class="who">川久保玲</div>
+      <div class="note">填充的腫塊扭曲了模特兒的身體；格紋讓整件事顯得居家。這個系列在媒體上仍被稱作「腫塊與隆起」。<a href="../lessons_chi/0003-kawakubo.html">第 03 課 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">1998–99</div>
+      <div class="what">三宅一生與藤原大開發 A-POC；該系列於 1999 年上市。</div>
+      <div class="who">三宅一生</div>
+      <div class="note">一整管由單一紗線織成的布，由穿的人自行裁剪。衣服成為一個系統，而不只是一個形狀。<a href="../lessons_chi/0002-miyake.html">第 02 課 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2000</div>
+      <div class="what">村上隆出版《超扁平》圖錄；奈良美智為《我不介意，如果你忘了我》回到日本。</div>
+      <div class="who">村上隆 · 奈良美智</div>
+      <div class="note">村上隆的文章把江戶繪畫、動畫與御宅族文化化為單一的藝術史論證。奈良美智在橫濱的展覽，讓那些大頭孩子成為全國性的圖像。<a href="../lessons_chi/0005-nara.html">第 05 課 →</a> <a href="../lessons_chi/0006-murakami.html">第 06 課 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2001</div>
+      <div class="what">MOCA 的《超扁平》展覽；Kaikai Kiki 成立。</div>
+      <div class="who">村上隆</div>
+      <div class="note">展期為 2001 年 1 月 14 日至 5 月 27 日，參展者包括奈良美智、青島千穗等人。村上隆的工作室成為一家公司。</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2002–03</div>
+      <div class="what">草間彌生的《自我消融室》；村上隆與 Louis Vuitton 的合作。</div>
+      <div class="who">草間彌生 · 村上隆</div>
+      <div class="note">這門課的兩極：一個由參觀者完成的房間，以及一場把藝術品變成全球商品的精品合作。<a href="../lessons_chi/0001-kusama.html">第 01 課 →</a> <a href="../lessons_chi/0006-murakami.html">第 06 課 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2005</div>
+      <div class="what">村上隆的《Little Boy》於日本協會展出；奈良美智的《青森犬》裝置完成。</div>
+      <div class="who">村上隆 · 奈良美智</div>
+      <div class="note">村上隆把原子彈與御宅族的「小男孩」化為一個展名。奈良美智那隻 8.5 公尺高的混凝土狗，成為青森的地標。</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2007–08</div>
+      <div class="what">村上隆的《我孤獨的牛仔》以 1,520 萬美元售出；《©Murakami》於布魯克林美術館開幕。</div>
+      <div class="who">村上隆</div>
+      <div class="note">這項拍賣紀錄讓藝術市場的問題無從迴避。這場回顧展把作品放進美術館，而樓下的周邊商品仍在販售。</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2010</div>
+      <div class="what">村上隆在凡爾賽；奈良美智的《Nobody's Fool》於亞洲協會展出。</div>
+      <div class="who">村上隆 · 奈良美智</div>
+      <div class="note">村上隆的花朵與角色佔據了法國王室的宮殿。奈良美智迎來他的第一場重要紐約個展，由 Melissa Chiu（招穎思）與手塚美和子策劃。</div>
+    </li>
+
+    <li class="entry" data-kind="context">
+      <div class="year">2011</div>
+      <div class="what">東北大地震、海嘯與福島核災。</div>
+      <div class="who">脈絡 · 日本</div>
+      <div class="note">奈良美智的作品變得更柔軟、更向內。村上隆則以《五百羅漢圖》回應——一幅動用龐大團隊、長達 100 公尺的繪畫。這場災難是兩人職涯的一條分界線。</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2015</div>
+      <div class="what">《五百羅漢圖》於東京森美術館開幕。</div>
+      <div class="who">村上隆</div>
+      <div class="note">一幅 3 × 100 公尺的繪畫，先在多哈展出，再到東京——這是它在日本的首展。它是村上隆「工作室即工廠」模式最清楚的例子。<a href="../lessons_chi/0006-murakami.html">第 06 課 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">2017</div>
+      <div class="what">大都會博物館的《川久保玲／Comme des Garçons：之間的藝術》；草間彌生美術館在東京開幕。</div>
+      <div class="who">川久保玲 · 草間彌生</div>
+      <div class="note">服裝學院為川久保玲舉辦完整回顧展。草間彌生則在東京新宿獲得一座五層樓的美術館。<a href="../lessons_chi/0003-kawakubo.html">第 03 課 →</a> <a href="../lessons_chi/0001-kusama.html">第 01 課 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2019</div>
+      <div class="what">奈良美智的《背後藏刀》以 1.957 億港元（約 2,490 萬美元）售出。</div>
+      <div class="who">奈良美智</div>
+      <div class="note">這是日本藝術家在拍賣會上的最高價。畫中是一個把刀藏在背後的女孩——可愛與威脅的公式被放大到極致。<a href="../lessons_chi/0005-nara.html">第 05 課 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="fashion">
+      <div class="year">2022</div>
+      <div class="what">三宅一生在東京辭世，享壽 84 歲。</div>
+      <div class="who">三宅一生</div>
+      <div class="note">品牌由其團隊延續；2016 年國立新美術館的回顧展，仍是對其作品最完整的交代。<a href="../lessons_chi/0002-miyake.html">第 02 課 →</a></div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2024</div>
+      <div class="what">《村上隆：物怪京都》於京都市京瓷美術館展出。</div>
+      <div class="who">村上隆</div>
+      <div class="note">一場大型回顧，把超扁平的論證帶回傳統繪畫的城市。約 170 件作品。</div>
+    </li>
+
+    <li class="entry" data-kind="art">
+      <div class="year">2026</div>
+      <div class="what">草間彌生於 8 月 14 日辭世，享壽 97 歲。回顧展在松本、東京與阿姆斯特丹持續舉行。</div>
+      <div class="who">草間彌生</div>
+      <div class="note">松本市美術館：《草間彌生：我心靈的歸處》，2026 年 9 月 19 日至 12 月 6 日。草間彌生美術館：《光芒蔓延……》，2026 年 10 月 8 日至 2027 年 1 月 31 日。<a href="../lessons_chi/0001-kusama.html">第 01 課 →</a></div>
+    </li>
+  </ol>
+
+  <hr class="rule">
+
+  <section class="source">
+    <h3>資料來源</h3>
+    <ul>
+      <li><a href="https://www.theguardian.com/artanddesign/2026/aug/27/yayoi-kusama-obituary">《衛報》〈草間彌生訃聞〉（2026 年 8 月 27 日）</a></li>
+      <li><a href="https://www.mplus.org.hk/en/magazine/yayoi-kusama-biography-timeline/">M+〈草間彌生的生平與職涯：年表〉</a></li>
+      <li><a href="https://mds.isseymiyake.com/im/en/">三宅設計事務所〈三宅一生的理念與作品〉</a></li>
+      <li><a href="https://www.metmuseum.org/essays/miyake-kawakubo-and-yamamoto-japanese-fashion-in-the-twentieth-century">大都會博物館〈三宅一生、川久保玲與山本耀司：二十世紀的日本時尚〉</a></li>
+      <li><a href="https://www.ngv.vic.gov.au/collecting-comme/rei-kawakubo-reframing-fashion/">NGV〈川久保玲：重新定義時尚〉</a></li>
+      <li><a href="https://www.moca.org/exhibitions/superflat">MOCA《超扁平》(2001)</a></li>
+      <li><a href="https://www.christies.com/en/stories/yoshitomo-nara-collecting-guide-aa7bd7944a774805b39fa91a3cded9e7">佳士得〈關於奈良美智你需要知道的一切〉</a></li>
+      <li><a href="https://www.mori.art.museum/contents/tm500/mobile/en/exhibition.html">森美術館《村上隆：五百羅漢圖》</a></li>
+    </ul>
+    <p>日期為 2026 年 11 月的快照。展覽檔期會變動；出發前請先確認。</p>
+  </section>
+
+  <nav class="lesson-nav">
+    <a href="../lessons_chi/index.html">← 課程首頁</a>
+    <a class="next" href="0002-where-to-see-them.html">何處觀賞 →</a>
+  </nav>
+</main>
+
+<footer class="site-footer">
+  <div class="inner"><span>六位藝術家 · 日本</span><span>參考 01 · 時間軸</span></div>
+</footer>
+
+<script>
+  (function () {
+    var buttons = Array.prototype.slice.call(document.querySelectorAll('.filters button'));
+    var entries = Array.prototype.slice.call(document.querySelectorAll('.entry'));
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        var filter = button.getAttribute('data-filter');
+        buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b === button)); });
+        entries.forEach(function (entry) {
+          entry.hidden = filter !== 'all' && entry.getAttribute('data-kind') !== filter;
+        });
+      });
+    });
+  })();
+</script>
+</body>
+</html>
